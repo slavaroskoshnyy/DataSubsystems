@@ -14,6 +14,6 @@
 
 [Отчёт](https://docs.google.com/spreadsheets/d/12CW-RahCNqOP_nRQRzfLI4o7lfq_9_XC6UvrF9_80JQ/edit?gid=455475186#gid=455475186) в Excel
 
-Ссылку на [GitHub](https://github.com/slavaroskoshnyy/DataSubsystems) с реализацией автотестов
+Ссылка на [GitHub](https://github.com/slavaroskoshnyy/DataSubsystems) с реализацией автотестов
 
-Ссылку на [hh.ru](https://rostov.hh.ru/resume/ba67e02eff09be08bf0039ed1f5a5765644a6f)
+Ссылка на [hh.ru](https://rostov.hh.ru/resume/ba67e02eff09be08bf0039ed1f5a5765644a6f)
