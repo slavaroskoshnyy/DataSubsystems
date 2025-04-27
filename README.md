@@ -8,19 +8,11 @@
 
 3. Написать 2 автотеста (один на happy path, второй — negative case) для этой формы. Предпочтительно использовать Cypress или Playwright.
 
-После выполнения задания отправьте:</br>
-Отчёт в удобном формате (например, Excel)</br>
-Ссылку на GitHub с реализацией автотестов</br>
-Ссылку на ваш профиль hh.ru</br>
-
-Почта для отправки материалов: marketing@datasub.com
-
 ---
 
 ## Ответы:
 
-[Отчёт в Excel](https://docs.google.com/spreadsheets/d/12CW-RahCNqOP_nRQRzfLI4o7lfq_9_XC6UvrF9_80JQ/edit?gid=455475186#gid=455475186)
-
+[Отчёт в Excel](https://docs.google.com/spreadsheets/d/12CW-RahCNqOP_nRQRzfLI4o7lfq_9_XC6UvrF9_80JQ/edit?gid=455475186#gid=455475186)</br>
 [Ссылку на GitHub с реализацией автотестов](https://github.com/slavaroskoshnyy/DataSubsystems)
 
 [Ссылку на hh.ru](https://rostov.hh.ru/resume/ba67e02eff09be08bf0039ed1f5a5765644a6f)
