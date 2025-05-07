@@ -1,8 +1,4 @@
 class HomePage {
-  getUrl() {
-    return "https://qatest.datasub.com/index.html";
-  }
-
   getNameField = () => cy.get("#name");
   getEmailField = () => cy.get("#email");
   getServiceField = () => cy.get("#service");
