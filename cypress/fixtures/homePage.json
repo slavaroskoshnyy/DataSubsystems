@@ -1,0 +1,9 @@
+{
+  "name": "User Name",
+  "email": "hello@cypress.io",
+  "typeSelector": "Select B Service",
+  "message": "Fixtures are a great way to mock data for responses to routes",
+  "successMassage": "Форма отправлена.",
+  "errorClass": "is-invalid",
+  "invalidEmail": "testgmailcom"
+}

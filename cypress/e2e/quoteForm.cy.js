@@ -1,15 +1,8 @@
 /// <reference types="cypress" />
 
-import { name, email } from "../fixtures/example";
+import homePage from "../fixtures/homePage.json";
 
 describe("Quote Form", () => {
-  const typeSelector = "Select B Service";
-  const message =
-    "Fixtures are a great way to mock data for responses to routes";
-  const successMassage = "Форма отправлена.";
-
-  const errorClass = "is-invalid";
-  const invalidEmail = "testgmailcom";
 
   beforeEach(() => {
     cy.visit("https://qatest.datasub.com/index.html");
@@ -17,40 +10,40 @@ describe("Quote Form", () => {
 
   context("happy path", () => {
     it("Sending a form with valid data", () => {
-      cy.get("#name").type(name);
-      cy.get("#email").type(email);
-      cy.get("#service").select(typeSelector);
+      cy.get("#name").type(homePage.name);
+      cy.get("#email").type(homePage.email);
+      cy.get("#service").select(homePage.typeSelector);
       cy.get("#purposePersonal").check();
       cy.get("#withdrawCash").check();
       cy.get("#withdrawCard").check();
       cy.get("#withdrawCrypto").check();
-      cy.get("#message").type(message);
+      cy.get("#message").type(homePage.message);
       cy.get('#subscriptionForm button[type="submit"]').click();
-      cy.get("#formStatus").should("have.text", successMassage);
+      cy.get("#formStatus").should("have.text", homePage.successMassage);
     });
   });
 
   context("negative case", () => {
     it("no name", () => {
       cy.get('#subscriptionForm button[type="submit"]').click();
-      cy.get("#name").should("have.value", "").and("have.class", errorClass);
+      cy.get("#name").should("have.value", "").and("have.class", homePage.errorClass);
     });
 
     it("no email", () => {
       cy.get('#subscriptionForm button[type="submit"]').click();
-      cy.get("#email").should("have.value", "").and("have.class", errorClass);
+      cy.get("#email").should("have.value", "").and("have.class", homePage.errorClass);
     });
 
     it("invalid email", () => {
       cy.get("#email")
-        .type(invalidEmail)
-        .should("have.value", invalidEmail)
-        .and("have.class", errorClass);
+        .type(homePage.invalidEmail)
+        .should("have.value", homePage.invalidEmail)
+        .and("have.class", homePage.errorClass);
     });
 
     it("no message", () => {
       cy.get('#subscriptionForm button[type="submit"]').click();
-      cy.get("#message").should("have.value", "").and("have.class", errorClass);
+      cy.get("#message").should("have.value", "").and("have.class", homePage.errorClass);
     });
   });
 });
