@@ -1,4 +1,6 @@
+import quoteForm from "../fixtures/quoteForm";
 class HomePage {
+  getVisitHomePage = () => cy.visit(quoteForm.url);
   getNameField = () => cy.get("#name");
   getEmailField = () => cy.get("#email");
   getServiceField = () => cy.get("#service");

@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
-
-import quoteForm from "../fixtures/quoteForm";
 import HomePage from "../pageObjects/HomePage.js";
+import quoteForm from "../fixtures/quoteForm";
 
 describe("Quote Form", () => {
   const homePage = new HomePage();
 
   beforeEach(() => {
-    cy.visit(quoteForm.url);
+    homePage.getVisitHomePage();
   });
 
   context("happy path", () => {
